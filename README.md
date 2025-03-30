@@ -1,4 +1,4 @@
-# 🧪 Old Dad Labs
+# Old Dad Labs 🛠✨🍼
 
 > Where bedtime becomes build time, and parenting becomes a playful ritual of weird little agents and co-creation.
 
