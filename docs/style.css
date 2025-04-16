@@ -3,12 +3,12 @@
 body {
     background-color: #fefae0;
     color: #1d1d1f;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     font-size: 16px;
-  }
+  }  
   
   .container {
     max-width: 700px;
@@ -24,6 +24,11 @@ body {
     text-align: center;
     margin-bottom: 2rem;
   }
+
+  h1, h2, h3 {
+    font-family: 'Press Start 2P', monospace;
+    line-height: 1.2;
+  }  
   
   h1 {
     font-size: 2.5rem;
@@ -89,3 +94,12 @@ body {
       font-size: 2rem;
     }
   }
+  .nibbles-avatar {
+    width: 96px;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+    image-rendering: pixelated;
+    filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3));
+  }
+  
