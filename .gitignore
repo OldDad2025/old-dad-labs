@@ -1,0 +1,30 @@
+# 🚫 Secrets stay sacred
+.env
+
+# 🐍 Python goblins
+__pycache__/
+*.pyc
+
+# 🧙‍♀️ Streamlit settings (optional but tidy)
+.streamlit/
+
+# 📓 Session memories and logs
+/logs/
+nibbles_logs/
+rituals/blessings/bless_log.jsonl
+
+# 🍎 Mac nonsense
+.DS_Store
+
+# 🤖 Future: Local model cache or audio renders
+models/
+outputs/
+*.wav
+*.mp3
+
+# Assets
+*.Zone.Identifier
+dir_structure.txt
+
+# Experiments
+experiments/

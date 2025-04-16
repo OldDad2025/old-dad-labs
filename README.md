@@ -5,6 +5,7 @@
 ---
 
 ## 👴 What is Old Dad Labs?
+
 Old Dad Labs is a garage-futurist experiment in joyful parenting, emotional coding, and creative rituals. It’s the heart of **Nibbles**, the *Vibe Coding Agent (VCA)* project—where livestreams become memories, tools become toys, and AI helps dads build bedtime bots with their kids.
 
 Born from a glitch, a bottle warmer, and a bedtime story gone rogue, Old Dad Labs is the experimental studio for:
@@ -16,52 +17,70 @@ It’s a lab, a journal, a time capsule—and someday, a legacy.
 
 ---
 
-## 🐾 Meet Nibbles (aka the Vibe Coding Agent)
-Your loyal co-pilot. A snack-fueled, bug-loving, bedtime-born pixel jackal who:
-- Helps spin up agents like *Dream DJ*, *Stuffie Chatbot*, *Mood Mural*, etc.
-- Lives inside your livestreams and bedtime rituals
-- Howls in binary. Dreams in pixel rainbows.
+## 🐾 Nibbles Labs — v1.3 MVP
 
-Nibbles is the VCA engine wrapped in a personality—and eventually, a polished app for non-coders.
+**Nibbles** is our first full-featured VCA prototype—your bedtime coding sidekick wrapped in rituals, blessings, and bedtime vibes.
+
+Nibbles v1.3 includes:
+
+- 🧠 **Master Prompt Generator** — Turns vague bedtime ideas into buildable prompt blueprints.
+- 💻 **Code It** — Generates working Python code with Streamlit UI.
+- 🕯️ **Bless This Build** — Emotionally wraps each session with a ritual blessing.
+- 🧠 **Prompt Log + Memory System** — Auto-saves every idea, prompt, and build.
+- 📦 **Export Agent Pack** — Bundle your code, prompt, and blessing into a shareable ZIP.
+- 🎨 **Theme Picker (Vibe Modes)** — Choose from soft, glitch, retro, or dream.
+- 🧰 **Developer Mode** — Unlock temp/top_p/max_token controls for prompt tuning.
+
+This is the Nibbles MVP. It’s raw, playful, WIP—and live on stream.
 
 ---
 
-## 🧰 What You’ll Find Here
-- `README.md` ← you're here now
-- `vibe_agent.py` ← the core open-source agent builder (WIP)
-- `/docs` ← manifestos, rituals, livestream prep
-- `/agents` ← modular agent ideas and builds
-- `/clips` ← livestream highlight clips and session recaps
-- `/blessings` ← bedtime messages, reflections, emotional code snippets
+## 🧪 How to Run Nibbles Labs Locally
+
+1. Clone this repo
+2. Create a `.env` file:
+   ```env
+   OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxx
+3. Install dependencies: pip install -r requirements.txt
+4. Launch the App: streamlit run nibbles-labs.py
+
+You’ll need an OpenAI API key (GPT-3.5 or GPT-4 supported).
+
+---
+
+## 🗂 Folder Structure
+
+nibbles-labs.py           # Main app
+utils/                    # Blessing engine, session logging, audio tools, more
+rituals/                  # Blessings + memory logs
+assets/                   # Avatars, sound, images
+nibbles_logs/             # Prompt + code logs (ignored by Git)
+experiments/              # Agents + test apps
+.env                      # API key (ignored)
 
 ---
 
 ## 📜 License Philosophy
-- **This Repo (Old Dad Labs)**: Licensed under **CC BY-NC-SA 4.0**
-  - Remix-friendly, attribution required, no commercial use
-  - Ideal for creative parenting, education, and non-profit tinkering
-- **Nibbles App (VCA polished version)**: Will follow a **proprietary license**
-  - Includes freemium features, app UI, voice packs, and more
 
-Why hybrid? Because:
-> "We open source the soul, but we protect the experience."
+- This Repo (Old Dad Labs): Licensed under CC BY-NC-SA 4.0
+- Remix-friendly, attribution required, no commercial use
+- Ideal for creative parenting, education, and non-profit tinkering
+- Nibbles App (polished version): Will follow a proprietary license
+- Includes freemium features, app UI, voice packs, and more
 
----
-
-## 📺 Livestream Vibe
-- Platform: **YouTube (primary)**, clips to TikTok/Insta/X
-- Ritual format: “What are we building today?” → Build → Giggles → Blessing
-- Capture: OBS-based setup with vertical-friendly clip tools (custom or AI-based)
-- End-of-Stream line: _"Rest easy, [child’s name]. The code will still be weird tomorrow."_
+"We open source the soul, but we protect the experience."
 
 ---
 
 ## 💫 Want to Build With Us?
-- Fork this lab. Remix an agent. Share your bedtime ritual.
-- Submit your builds to the future **Agent Gallery**.
-- Use the hashtag `#OldDadLabs` when you post your weird bedtime bot.
 
-This isn’t just code. This is memory-making.
-This is parenting as poetry. This is legacy loading.
+- Fork this lab. Remix an agent. Share your ritual.
+- Submit your builds to the future Agent Gallery
+- Use #OldDadLabs or #NibblesVCA when you post
+
+This isn’t just code.
+It’s memory-making.
+It’s bedtime bonding.
+It’s parenting as poetry.
 
 Welcome to the Lab. Let’s get weird. 🐾
