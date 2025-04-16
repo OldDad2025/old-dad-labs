@@ -102,3 +102,5 @@ It’s bedtime bonding.
 It’s parenting as poetry.
 
 Welcome to the Lab. Let’s get weird. 🐾
+
+[Connect With Old Dad Labs](https://bento.me/olddad)
