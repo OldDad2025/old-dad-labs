@@ -24,6 +24,11 @@ body {
     text-align: center;
     margin-bottom: 2rem;
   }
+  
+  .glitch {
+    color: #ff00cc;
+    text-shadow: 1px 0 #00fff7, -1px 0 #f7ff00;
+  }  
 
   h1, h2, h3 {
     font-family: 'Press Start 2P', monospace;
