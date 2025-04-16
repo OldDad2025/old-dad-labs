@@ -1,0 +1,91 @@
+/* style.css — Old Dad Labs Zine Vibes */
+
+body {
+    background-color: #fefae0;
+    color: #1d1d1f;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff8dc;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #8b5cf6;
+    border-radius: 16px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #8b5cf6;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+  }
+  
+  .nibbles-quote {
+    font-style: italic;
+    background: #fef3c7;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #facc15;
+    margin-top: 1rem;
+    color: #4b5563;
+  }
+  
+  .blog-links ul {
+    list-style-type: '🐾 ';
+    padding-left: 1rem;
+  }
+  
+  .blog-links li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .blog-links a {
+    text-decoration: none;
+    color: #3b82f6;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .blog-links a:hover {
+    color: #ef4444;
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+    border-top: 1px dashed #ddd;
+    padding-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
