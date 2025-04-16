@@ -1,8 +1,10 @@
-# Nibbles Agent - Streamlit v1.1
-# Last Updated: April 12, 2025
-# Two-button flow: Build It + Code It (Refactored for clarity)
-# Soft Mode only | Master Prompt Generator + Agent Coder
-# Lab Settings sidebar added for session tools
+# Nibbles Agent - Streamlit v1.3
+# Last Updated: April 16, 2025
+# Two-button flow: Build It + Code It (with Refine option)
+# Theme Picker (Vibe Modes): soft, glitch, retro, dream
+# Master Prompt Enhancements + Ritual Blessing Engine (RBE) included
+# Export Agent Pack + Developer Mode for prompt tuning
+# Lab Settings sidebar added for clean control and future upgrades
 
 import os
 import random
