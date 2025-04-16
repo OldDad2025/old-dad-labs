@@ -32,5 +32,22 @@
       <p>🐾 Made with love, glitches, and warm tea in Old Dad Labs</p>
     </footer>
   </div>
+
+  <audio id="lofi-player" autoplay loop>
+    <source src="assets/nibbles-lofi.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>  
+  
+<button onclick="toggleAudio()" id="audio-btn">🎵 toggle vibe</button>
+<script>
+  const audio = document.getElementById("lofi-player");
+  function toggleAudio() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
 </body>
 </html>

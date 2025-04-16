@@ -99,7 +99,8 @@ body {
       font-size: 2rem;
     }
   }
-.nibbles-avatar {
+
+  .nibbles-avatar {
   width: 72px;
   height: auto;
   display: block;
@@ -108,4 +109,22 @@ body {
   filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3));
   border-radius: 8px;
 }
+
+#audio-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #fef3c7;
+    border: 2px dashed #8b5cf6;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    color: #1d1d1f;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #audio-btn:hover {
+    background: #fde68a;
+  }
   
