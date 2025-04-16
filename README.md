@@ -35,28 +35,46 @@ This is the Nibbles MVP. It’s raw, playful, WIP—and live on stream.
 
 ---
 
-## 🧪 How to Run Nibbles Labs Locally
+### 🧪 How to Run Nibbles Labs Locally
 
-1. Clone this repo
-2. Create a `.env` file:
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/OldDad2025/old-dad-labs.git
+   cd old-dad-labs
+   ```
+
+2. **Create a `.env` file** and add your OpenAI API key:
    ```env
-   OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxx
-3. Install dependencies: pip install -r requirements.txt
-4. Launch the App: streamlit run nibbles-labs.py
+   OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   ```
 
-You’ll need an OpenAI API key (GPT-3.5 or GPT-4 supported).
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Launch the app**
+   ```bash
+   streamlit run nibbles-labs.py
+   ```
+
+> ⚠️ You’ll need an OpenAI API key (GPT-3.5 or GPT-4 supported)
 
 ---
 
-## 🗂 Folder Structure
+### 🗂 Folder Structure
 
-nibbles-labs.py           # Main app
-utils/                    # Blessing engine, session logging, audio tools, more
-rituals/                  # Blessings + memory logs
-assets/                   # Avatars, sound, images
-nibbles_logs/             # Prompt + code logs (ignored by Git)
-experiments/              # Agents + test apps
-.env                      # API key (ignored)
+```plaintext
+nibbles-labs.py        # Main app
+utils/                 # Blessing engine, session logging, audio tools
+rituals/               # Blessings + memory logs
+assets/                # Avatars, sound, images
+nibbles_logs/          # Prompt + code logs (ignored by Git)
+experiments/           # Agents + test apps and prototypes
+.env                   # API key (ignored by Git)
+requirements.txt       # Python dependencies
+README.md              # You are here
+```
 
 ---
 
