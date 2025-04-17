@@ -10,8 +10,7 @@ __pycache__/
 
 # 📓 Session memories and logs
 /logs/
-nibbles_logs/
-rituals/blessings/bless_log.jsonl
+/rituals/
 
 # 🍎 Mac nonsense
 .DS_Store
@@ -21,6 +20,9 @@ models/
 outputs/
 *.wav
 *.mp3
+*.ipynb
+*.json
+
 
 # Assets
 *.Zone.Identifier
