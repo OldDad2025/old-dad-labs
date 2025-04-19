@@ -12,8 +12,7 @@ body {
 
 .container {
   max-width: 700px;
-  /* add space from the viewport edges */
-  margin: 2rem 1rem;
+  margin: 2rem 1rem;           /* space from viewport edges */
   padding: 2rem;
   background: #fff8dc;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -46,7 +45,8 @@ header {
 .glitch {
   color: #ff00cc;
   text-shadow: 1px 0 #00fff7, -1px 0 #f7ff00;
-  white-space: nowrap; /* keep title on one line */
+  font-size: clamp(1.8rem, 8vw, 2.5rem); /* fluid sizing */
+  white-space: normal;                   /* allow wrapping */
 }
 
 h1,
@@ -57,7 +57,6 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
   color: #8b5cf6;
   margin-bottom: 0.5rem;
   letter-spacing: -1px;
@@ -85,9 +84,9 @@ h1 {
 /* dropdown for blog links */
 .blog-links details summary {
   font-family: 'Press Start 2P', monospace;
-  font-size: 1rem;
+  font-size: clamp(1rem, 5vw, 1.2rem); /* fluid sizing */
   cursor: pointer;
-  white-space: nowrap; /* keep “Recent Blog Posts” on one line */
+  white-space: normal;                  /* allow wrap */
   margin-bottom: 0.5rem;
   outline: none;
 }
@@ -101,11 +100,13 @@ h1 {
   margin-bottom: 0.75rem;
 }
 
-.blog-links a {
+.blog-links details ul li a {
   text-decoration: none;
   color: #3b82f6;
   font-weight: bold;
   transition: color 0.2s ease-in-out;
+  word-break: break-word; /* wrap long titles */
+  hyphens: auto;
 }
 
 .blog-links a:hover {
@@ -139,11 +140,19 @@ footer {
   padding-top: 1rem;
 }
 
+/* tweak for smaller tablets */
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
   }
-  h1 {
-    font-size: 2rem;
+}
+
+/* extra small phones */
+@media (max-width: 480px) {
+  .glitch {
+    font-size: clamp(1.5rem, 10vw, 2rem);
+  }
+  .blog-links details summary {
+    font-size: clamp(0.9rem, 6vw, 1.1rem);
   }
 }
