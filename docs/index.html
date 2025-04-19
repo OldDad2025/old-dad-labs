@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Old Dad Labs</title>
@@ -9,56 +12,80 @@
 </head>
 <body>
   <div class="container">
-    <img src="assets/nibbles-avatar.png" alt="Nibbles the Jackal" class="nibbles-avatar" />
+    <!-- top bar: avatar + button -->
+    <div class="top-bar">
+      <img
+        src="assets/nibbles-avatar.png"
+        alt="Nibbles the Jackal"
+        class="nibbles-avatar"
+      />
+      <button onclick="toggleAudio()" id="audio-btn">🎵 start vibe</button>
+    </div>
+
     <header>
-        <h1 class="glitch">🧪 Old Dad Labs</h1>
+      <h1 class="glitch">🧪 Old Dad Labs</h1>
       <p class="subtitle">A ritual blog of vibe coding blessed builds</p>
     </header>
 
     <section class="intro">
-      <p>This is where parenting meets prototyping. A glitchy playground for bedtime builds, memory machines, and Nibbles-powered rituals.</p>
-      <p class="nibbles-quote">“The code will still be weird tomorrow.” – Nibbles</p>
+      <p>
+        This is where parenting meets prototyping. A glitchy playground for
+        bedtime builds, memory machines, and Nibbles-powered rituals.
+      </p>
+      <p class="nibbles-quote">
+        “The code will still be weird tomorrow.” – Nibbles
+      </p>
     </section>
 
     <section class="blog-links">
-      <h2>📝 Recent Blog Posts</h2>
-      <ul>
-        <li><a href="blog/blessing-of-the-week.html">✨ Blessing of the Week – April 16, 2025</a></li>
-        <li><a href="blog/devlog-2025-04-16.html">🛠 Devlog – April 16, 2025</a></li>
-      </ul>    
+      <details>
+        <summary>📝 Recent Blog Posts</summary>
+        <ul>
+          <li>
+            <a href="blog/blessing-of-the-week.html">
+              ✨ Blessing of the Week – April 16, 2025
+            </a>
+          </li>
+          <li>
+            <a href="blog/devlog-2025-04-16.html">
+              🛠 Devlog – April 16, 2025
+            </a>
+          </li>
+        </ul>
+      </details>
     </section>
+
     <footer>
-      <p>🐾 Made with love, glitches, and warm tea in <a href="https://bento.me/olddad">Old Dad Labs</a> </p>
+      <p>
+        🐾 Made with love, glitches, and warm tea in
+        <a href="https://bento.me/olddad">Old Dad Labs</a>
+      </p>
     </footer>
   </div>
 
   <audio id="lofi-player" loop>
     <source src="assets/nibbles-lofi.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
-  </audio>  
-  
-<button onclick="toggleAudio()" id="audio-btn">🎵 toggle vibe</button>
+  </audio>
 
-<script>
-  const audio = document.getElementById("lofi-player");
-  const audioBtn = document.getElementById("audio-btn");
-  
-  // Update button text based on audio state
-  function updateButtonText() {
-    audioBtn.textContent = audio.paused ? "🎵 start vibe" : "🎵 pause vibe";
-  }
-  
-  function toggleAudio() {
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
+  <script>
+    const audio = document.getElementById("lofi-player");
+    const audioBtn = document.getElementById("audio-btn");
+
+    function updateButtonText() {
+      audioBtn.textContent = audio.paused ? "🎵 start vibe" : "🎵 pause vibe";
     }
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+      updateButtonText();
+    }
+
     updateButtonText();
-  }
-  
-  // Set initial button state
-  updateButtonText();
-</script>
+  </script>
 </body>
 </html>
