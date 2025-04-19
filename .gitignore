@@ -20,6 +20,7 @@ models/
 outputs/
 *.wav
 *.mp3
+!assets/nibbles-lofi.mp3
 *.ipynb
 *.json
 
