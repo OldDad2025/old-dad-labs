@@ -12,7 +12,7 @@
     <img src="assets/nibbles-avatar.png" alt="Nibbles the Jackal" class="nibbles-avatar" />
     <header>
         <h1 class="glitch">🧪 Old Dad Labs</h1>
-      <p class="subtitle">A ritual zine of buggy bedtime bots and blessed builds</p>
+      <p class="subtitle">A ritual blog of vibe coding blessed builds</p>
     </header>
 
     <section class="intro">
@@ -27,27 +27,38 @@
         <li><a href="blog/devlog-2025-04-16.html">🛠 Devlog – April 16, 2025</a></li>
       </ul>    
     </section>
-
     <footer>
-      <p>🐾 Made with love, glitches, and warm tea in Old Dad Labs</p>
+      <p>🐾 Made with love, glitches, and warm tea in [Old Dad Labs](https://bento.me/olddad)</p>
     </footer>
   </div>
 
-  <audio id="lofi-player" autoplay loop>
+  <audio id="lofi-player" loop>
     <source src="assets/nibbles-lofi.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>  
   
 <button onclick="toggleAudio()" id="audio-btn">🎵 toggle vibe</button>
+
 <script>
   const audio = document.getElementById("lofi-player");
+  const audioBtn = document.getElementById("audio-btn");
+  
+  // Update button text based on audio state
+  function updateButtonText() {
+    audioBtn.textContent = audio.paused ? "🎵 start vibe" : "🎵 pause vibe";
+  }
+  
   function toggleAudio() {
     if (audio.paused) {
       audio.play();
     } else {
       audio.pause();
     }
+    updateButtonText();
   }
+  
+  // Set initial button state
+  updateButtonText();
 </script>
 </body>
 </html>
